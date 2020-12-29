@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import requests
+import json
+
+url = "http://localhost:8080/v1/books"
+books = requests.get(url)
+
+print(json.dumps(books.json(), indent=4))
